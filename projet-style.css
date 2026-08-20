@@ -1,0 +1,297 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: #0c0c0c;
+    color: #fff;
+}
+.container{
+    padding: 10px 10%;
+}
+
+/* ----- Header & Nav ----- */
+#header-projet{
+    width: 100%;
+    background: #0c0c0c;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+nav h1{
+    font-size: 20px;
+    color: #fff;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 15px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: #3666ce;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.3s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+/* ----- Titres et écritures ----- */
+.title{
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+}
+.sub-title{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    color: #fff;
+}
+#projet-resume{
+    padding: 50px 0;
+}
+
+/* ----- Préambule ----- */
+.team-list{
+    margin-top: 25px;
+    text-align: center;
+    color:#cccccc;
+    font-size: 16px;
+}
+.team-list a{
+    color: #3666ce;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+.team-list a:hover{
+    color: #fff;
+}
+
+/* ----- Cases 3x3 (Reprises de l'onglet Projets) ----- */
+.resume-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.resume-list div{
+    background: #1a1a1a;
+    padding: 15px;
+    font-size: 14px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.3s, transform 0.3s;
+}
+.resume-list div i,
+.resume-list div svg{
+    font-size: 30px;
+    margin: 0 auto 15px auto;
+    display: block;
+}
+.resume-list div h2{
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.resume-list div p{
+    line-height: 1.5;
+    font-size: 15px;
+    text-align: center;
+}
+.resume-list div:hover{
+    background: #3666ce;
+    transform: translateY(-10px);
+}
+
+/* ----- Espacement général des sections ----- */
+#projet-context, #projet-objectif, #projet-methodo, #projet-data{
+    padding: 10px 0;
+}
+
+/* ----- 1. Contexte ----- */
+.context-split{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.context-text{
+    flex: 1;
+    min-width: 300px;
+    border-left: 5px solid #3666ce; /* Ligne éditoriale bleue */
+    padding-left: 20px;
+}
+.context-text p{
+    margin-bottom: 15px;
+    line-height: 1.7;
+    color: #e0e0e0;
+    text-align: justify;
+    hyphens: auto;
+}
+.context-text a{
+    color:#3666ce;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.context-text a:hover{
+    color:#fff;
+}
+
+/* ----- 2. Objectifs ----- */
+.objectifs-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+.objectif-card{
+    background: #1a1a1a;
+    padding: 25px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    transition: transform 0.3s, background 0.3s;
+}
+.objectif-card:hover {
+    transform: translateY(-5px); /* Repris de ton effet projet */
+    border-left: 4px solid #3666ce;
+}
+.objectif-card i{
+    font-size: 35px;
+    color: #3666ce;
+}
+.objectif-card h3{
+    font-size: 20px;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+.objectif-card p{
+    font-size: 14px;
+    color: #ccc;
+    line-height: 1.5;
+}
+
+/* ----- 3. Méthodologie & Tags ----- */
+.methodo-content{
+    background: #1a1a1a;
+    padding: 30px;
+    border-radius: 10px;
+}
+.methodo-text p{
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #e0e0e0;
+}
+.sous-liste{
+    margin-top: 10px;
+    margin-left: 20px;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    color:#e0e0e0;
+    line-height: 1.6;
+}
+.sous-liste li{
+    list-style-type: disc !important;
+    margin: 8px 0 !important;
+    line-height: 1.5;
+}
+.skills-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.tag {
+    background: #3666ce;
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 20px; /* Forme de pilule */
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* ----- 4. Données / Biblio ----- */
+.data-list{
+    list-style: none;
+    padding: 0;
+}
+.data-list li{
+    background: #1a1a1a;
+    margin-bottom: 15px;
+    padding: 15px 20px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: #e0e0e0;
+}
+.data-list li i{
+    color: #3666ce;
+    font-size: 20px;
+    min-width: 25px;
+}
+.data-list li a{
+    color: #3666ce;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.data-list li a:hover{
+    text-decoration: underline;
+}
+
+/* ----- Intégration PDF ----- */
+.pdf-container iframe{
+    background: #1a1a1a; /* Fond si le PDF tarde à charger */
+}
+
+/* ----- Boutons ----- */
+.btn{
+    display: inline-block;
+    margin: 30px 10px 0;
+    padding: 10px 30px;
+    font-size: 16px;
+    border: 1px solid #3666ce;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.3s;
+}
+.btn:hover{
+    background: #3666ce;
+}
+.btn.btn2{
+    background-color: #3666ce;
+    margin: 50px 0;
+}
+
+/* ----- Footer ----- */
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background-color: #1a1a1a;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+html{
+    scroll-behavior: smooth;
+}

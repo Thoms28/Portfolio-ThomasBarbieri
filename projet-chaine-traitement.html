@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet - Chaîne de traitement | Thomas BARBIERI</title>
+    <link rel="stylesheet" href="projet-style.css">
+    <script src="https://kit.fontawesome.com/7e0552c28c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header-projet">
+    <div class="container">
+        <nav>
+            <h1>Thomas BARBIERI</h1>
+            <ul>
+               <li><a href="index.html#about">À propos</a></li> 
+               <li><a href="index.html#projects">Projets</a></li> 
+               <li><a href="index.html#cartotheque">Cartothèque</a></li>
+               <li><a href="index.html#contact">Contact</a></li> 
+            </ul>
+        </nav>
+        <a href="index.html#projects" class="btn" style="margin-left: 0;">
+            <i class="fa-solid fa-arrow-left" style="margin-right: 8px;"></i>Retour au portfolio</a>
+    </div> 
+</div>
+
+<!-- Résumé PROJET -->
+<div id="projet-resume">
+    <div class="container">
+        <h1 class="title">Chaîne de traitement - Modeleur graphique</h1>
+        <div class="resume-list">
+            <div>
+                <i class="fa-regular fa-calendar"></i>
+                <h2>Période</h2>
+                <p>Avril 2026</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-graduation-cap"></i>
+                <h2>Formation</h2>
+                <p>Master 1 - SIGAT</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-square-poll-horizontal"></i>
+                <h2>Type de rendu</h2>
+                <p>Rapport méthdologique</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-user"></i>
+                <h2>En binôme</h2>
+                <p>Thomas Barbieri et Antoine Menissez</p>
+            </div>
+        </div>
+        <p class="team-list">Étudiants concernés : 
+            <a href="" target="_blank">Thomas Barbieri</a> et
+            <a href="" target="_blank">Antoine Menissez.</a>
+        </p>
+    </div>
+</div>
+
+<!-- Présentation & Contexte PROJET -->
+<div id="projet-context">
+    <div class="container">
+        <h2 class="sub-title">Présentation & Contexte</h2>
+        <div class="context-split">
+            <div class="context-text">
+                <p>Dans le cadre du cours "Chaîne de traitements de l'information géographique" en Master 1 SIGAT, il nous a été demandé de réaliser une chaîne de traitement fonctionnelle, automatisée et reproductible, en utilisant le modeleur graphique intégré à QGIS.
+                La seconde contrainte étant de réaliser cette chaîne de traitement sur des données liées à la thématique des mobilités, ici sur les réseaux de transports de la ville de Nantes en particulier, avec des tentatives d'adaptation sur le réseau de transports rouennais. </p>
+                <p>Ce rapport méthodologique et cette chaîne de traitement devait hypothétiquement servir à un chargé de mission de mobilité dans le cadre de ses missions. Notre idée fut ici de traiter les sujets de la desserte, de l'accessibilité et de l'offre de transports publics de façon générale.</p>
+            </div>
+        </div>
+        </div>
+    </div>
+
+<!-- Objectifs PROJET -->
+<div id="projet-objectif">
+    <div class="container">
+        <h2 class="sub-title">Objectifs du projet</h2>
+        <div class="objectifs-grid">
+            <div class="objectif-card">
+                <i class="fa-solid fa-database"></i>
+                <div>
+                    <h3>Données</h3>
+                    <p>Croiser la donnée des mobilités avec des données démographiques.</p>
+                </div>
+            </div>
+            <div class="objectif-card">
+                <i class="fa-solid fa-city"></i>
+                <div>
+                    <h3>Appréhender le territoire</h3>
+                    <p>Comprendre les dynamiques de desserte, dʼaccessibilité et dʼoffre des transports publics dans une métropole importante.<p>
+                </div>
+            </div>
+            <div class="objectif-card">
+                <i class="fa-solid fa-gear"></i>
+                <div>
+                    <h3>Paramétrages</h3>
+                    <p>Permettre de régler le modèle avec des paramètres différents fonction des besoins de l'utilisateur.</p>
+                </div>
+            </div>
+            <div class="objectif-card">
+                <i class="fa-solid fa-bus"></i>
+                <div>
+                    <h3>Adaptation</h3>
+                    <p>Permettre le transfert du modèle réalisé sur Nantes à d'autres métropoles.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Méthdologie / Compétences PROJET -->
+<div id="projet-methodo">
+    <div class="container">
+        <h2 class="sub-title">Méthodologie / Compétences</h2>
+        <div class="methodo-content">
+            <div class="methodo-text">
+                <p>Pour réaliser cette chaîne de traitements, tel a été notre méthodologie : </p>
+                    <ul class="sous-liste">
+                            <li>Recherche de la donnée disponible en open-data sur le domaine des transports / mobilités</li>
+                            <li>Transformation par un script Python du GTFS extrait sur l'open-data</li>
+                            <li>Agrégation aux carreaux de 200m des données GTFS / mobilités pour permettre la comparaison entre données socio-démographiques et données de mobilités</li>
+                            <li>Création d'indicateurs statistiques à partir des données dans les carreaux</li>
+                            <li>Cartographie des indicateurs aux carreaux INSEE sur une ville faisant parti de la métropole étudiée</li>
+                    </ul>
+            </div>
+            <div class="skills-tags">
+                <span class="tag">QGIS</span>
+                <span class="tag">SQL</span>
+                <span class="tag">Données en open-data</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Données / Bibliographie PROJET -->
+<div id="projet-data">
+    <div class="container">
+        <h2 class="sub-title">Données / Bibliographie</h2>
+        <ul class="data-list">
+            <li><i class="fa-solid fa-database"></i> <strong>INSEE :</strong><a href="https://www.insee.fr/fr/statistiques/8735162?sommaire=8735243">Données carroyées de l'INSEE selon les revenus, la pauvreté et le niveau de vie en 2021.</a></li>
+            <li><i class="fa-solid fa-database"></i> <strong>IGN :</strong><a href="https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_ADMIN-EXPRESS">Communes françaises 2026 - ADMIN-EXPRESS.</a></li>
+            <li><i class="fa-solid fa-database"></i> <strong>Nantes Métropole :</strong><a href="https://transport.data.gouv.fr/datasets/reseau-de-transports-collectifs-naolib">GTFS du Réseau urbain Naolib (Nantes Métropole) - 30 mars 2026.</a></li>
+            <li><i class="fa-solid fa-database"></i> <strong>Nantes Métropole :</strong><a href="https://data.nantesmetropole.fr/explore/dataset/244400404_stations-velos-libre-service-nantes-metropole/information/?sort=-idobj">Localisation des stations vélos en libre-service Naolib (Nantes Métropole).</a></li>
+            <li><i class="fa-solid fa-database"></i> <strong>Nantes Métropole :</strong><a href="https://data.nantesmetropole.fr/explore/dataset/244400404_parcs-relais-nantes-metropole/information/?disjunctive.commune&disjunctive.libtype">Parkings-relai Naolib (Nantes Métropole).</a></li>
+        </ul>
+    </div>
+</div>
+
+<!-- Rendu Final PROJET -->
+<div id="projet-rendu">
+         <div class="container">
+            <h2 class="sub-title">Rendu Final</h2>
+            <iframe src="assets/Projets/Master 1/Rendu Chaîne de traitement Thomas BARBIERI et Antoine MENISSEZ.pdf" width="100%" height="1080px" style="border: none; border-radius: 10px; margin-top: 20px;"></iframe>
+        </div>    
+        </div>
+    </div>
+</div>
+
+
+
+
+       
+
+
+<!-- CONTACT & FOOTER (Identique à l'original) -->
+<div id="contact">
+    <div class="copyright">
+        <p>Copyright &copy; - Tous droits réservés - Thomas Barbieri - <span id="year"></span></p>
+    </div>
+</div>
+
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>

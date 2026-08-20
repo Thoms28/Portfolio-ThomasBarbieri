@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Thomas BARBIERI</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7e0552c28c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+        <div class="container">
+        <nav>
+            <h1>Thomas Barbieri</h1>
+            <ul>
+               <li><a href="#about">À propos</a></li> 
+               <li><a href="#projects">Projets</a></li> 
+               <li><a href="#cartotheque">Cartothèque</a></li>
+               <li><a href="#contact">Contact</a></li> 
+            </ul>
+        </nav>
+    </div> 
+    <div class="header-text">
+        <h1><span>Thomas Barbieri</span> - Géomaticien / Cartographe</h1>
+        <p> Bienvenue sur mon portfolio ! Étudiant en Master SIGAT à Rennes, je recherche un stage de 6 mois à partir de Mai 2027.</p>
+        <a href="#about" class="btn btn2">Mon profil</a>
+        <a href="#contact" class="btn">Contact</a>
+    </div>
+ </div>
+
+<!-----A propos Section----->
+
+ <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/Web/Thomas BARBIERI - Restitution publique.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">À propos de moi</h1>
+                <p class="intro-texte">Étudiant en géomatique en deuxième année du Master
+                    SIGAT à l'Université Rennes 2, je suis à la recherche d'un stage d'une durée de 6 mois
+                    à partir de Mai 2027. Je suis ouvert à toute mobilité en France et à l'international pour la réalisation de ce stage.</p>
+                
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('competences')">Compétences</p>
+                <p class="tab-links" onclick="opentab('experiences')">Expériences</p>
+                <p class="tab-links" onclick="opentab('formation')">Formation</p>
+            </div>
+            <div class="tab-contents active-tab" id="competences">
+                <ul>
+                    <li><span>SIG & Télédétection</span><br>QGIS, ArcGIS, SNAP et fonctionnalitées associées</li>
+                    <li><span>PAO & DAO</span><br>Adobe Illustrator, Adobe Photoshop, Inkscape, Affinity Designer, Canva</li>
+                    <li><span>Data-viz</span><br>Flourish, Power BI</li>
+                    <li><span>Traitements de données</span><br>RStudio, Excel, Python, SQL, FME, Sphinx iQ 3, ModelBuilder</li>
+                    <li><span>Langages de programmation</span><br>HTML, CSS, Python, R</li>
+                    <li><span>Gestion de base de données</span><br>MySQL, PostgreSQL, PostGIS, Microsoft Access</li>
+                    <li><span>Cartographie Web - Webmapping</span><br>Leaflet, Maplibre, ArcGIS Online (StoryMaps)</li>
+                    <li><span>Autres</span><br>Suite Office & Google, LLM / IA Générative, Gestion de projet</li>
+
+                </ul>
+            </div>
+            <div class="tab-contents" id="experiences">
+                <ul>
+                    <li>
+                        <span>2026 | Atelier professionnel - Gendarmerie Nationale</span>
+                        <ul class="sous-liste">
+                            <li>Conception et automatisation d'atlas cartographiques départementaux sous QGIS pour l'aide à la décision stratégique des commandants de groupement.</li>
+                            <li>Collecte, traitement et intégration de données géospatiales complexes.</li>
+                            <li>Création de 20 planches, accompagnées de supports de data-visualisation pour simplifier l'analyse territoriale, respectant les règles de la sémiologie graphique.</li>
+                            <li>Gestion de projet : pilotage opérationnel, coordination et respect des plannings.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span>2020 – 2024 | Virtual Racers Community</span>
+                        <ul class="sous-liste">
+                            <li>Mise en place des compétitions (règlements, inscriptions, prospection).</li>
+                            <li>Responsable de la mise en œuvre (classements, lien entre les participants et l’organisation, contrôle de la bonne organisation des différents aspects nécessaires à la compétition).</li>
+                            <li>Communication sur les réseaux sociaux (création d’affiches, annonces des évènements, contenus courts, diffusion).</li>
+                            <li>Travail en équipe (implication d’une dizaine de personne).</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="formation">
+                <ul>
+                    <li>
+                        <span>2025 – 2027 | Master Géomatique - parcours SIGAT - Université Rennes 2</span>
+                        <ul class="sous-liste">
+                            <li>Master 1 mention Bien, major de promotion.</li>
+                            <li>Conception et administration de bases de données spatiales, traitements géomatiques avancés, géostatistiques et analyse spatiale (Modeleur QGIS, SQL, RStudio).</li>
+                            <li>Conduite de projets appliqués à l'aménagement du territoire et création de supports de valorisation (cartographie, dataviz).</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span>2022 – 2025 | Licence de Géographie et aménagement - Nantes Université</span>
+                        <ul class="sous-liste">
+                            <li>Mention Bien, 2ème d'une promotion de 100 étudiants.</li>
+                            <li>Acquisition des bases en géomatique et cartographie : sémiologie graphique, production de cartes thématiques, initiation aux SIG et à la télédétection.</li>
+                            <li>Approche pluridisciplinaire et transversale de la géographie : géographie humaine (urbaine, rurale, sociale, culturelle, politique), géographie physique / environnementale (climatologie, géomorphologie) et géographie régionale.</li>
+                            <li>Méthodologie et approche de terrain : collecte de données, enquêtes quantitatives / qualitatives et statistiques appliquées à la géographie.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span>2019 – 2022 | Baccalauréat Général - Ensemble St-Félix-La-Salle, Nantes</span>
+                        <ul class="sous-liste">
+                            <li>Mention Assez bien</li>
+                            <li>Spécialités Histoire, Géographie, Géopolitique, Sciences Politiques (HGGSP) - Sciences économiques et sociales (SES).</li>
+                            <li>Spécialité Mathématiques en classe de première - option Droit, Grands Enjeux du Monde Contemporain (DGEMC).</li>
+                            <li>Participation au concours "Petites plaidories" dans le cadre de l'option DGEMC.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div> 
+        </div>
+    </div>
+ </div>
+
+<!-----Projects Section----->
+
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">Projets</h1>
+        <div class="projects-list">
+            <div>
+                <i class="fa-solid fa-square-poll-horizontal"></i>
+                <h2>Monographie</h2>
+                <p>Analyse de géographie électorale de l'AAV de Reims lors de l'élection présidentielle de 2022.</p>
+                <a href="projet-monographie.html">Voir le projet</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-building-shield"></i>
+                <h2>Atelier professionnel - Atlas 360</h2>
+                <p>Participation à la phase 2 du projet Atlas 360, avec la réalisation de 20 planches sur la thématique des réseaux.</p>
+                <a href="projet-gendarmerie.html">Voir le projet</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-diagram-project"></i>
+                <h2>Chaîne de traitement automatisée</h2>
+                <p>Analyse de la desserte, de l'accessibilité et de l'offre des transports publics dans la métropole nantaise à partir d'une chaîne de traitement automatisée avec le modeleur graphique.</p>
+                <a href="projet-chaine-traitement.html">Voir le projet</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-satellite"></i>
+                <h2>Télédétection</h2>
+                <p>Étude des variations spatiales du système hydrologique du lac Tchad et de son environnement entre 1984 et 2025.</p>
+                <a href="projet-teledetection.html">Voir le projet</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-r-project"></i>
+                <h2>Géostatistiques</h2>
+                <p>Ségrégation socio-résidentielle à Bogotá.</p>
+                <a href="projet-geostatistiques.html">Voir le projet</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-clipboard-list"></i>
+                <h2>Enquête par questionnaire</h2>
+                <p>Comprendre et appréhender les modes de transports vers le centre commercial Alma à Rennes.</p>
+                <a href="projet-enquete-questionnaire.html">Voir le projet</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-layer-group"></i>
+                <h2>Cartographie de données ventilées</h2>
+                <p>Dynamiques résidentielles dans le bâti de l'Est Parisien.</p>
+                <a href="projet-ventilation.html">Voir le projet</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-layer-group"></i>
+                <h2>Cartographie de flux</h2>
+                <p>Représentation des flux domicile-travail journaliers sur le littoral Atlantique.</p>
+                <a href="projet-flux.html">Voir le projet</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-map-location-dot"></i>
+                <h2>Analyse multicritères</h2>
+                <p>Préétude de localisation pour l'achat d'un bien à Rennes au regard de crtières discrets et exclusifs.</p>
+                <a href="projet-scoring.html">Voir le projet</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-sistrix"></i>
+                <h2>Analyse matricielle</h2>
+                <p>Analyse matricielle prospective pour l'installation d'un parc éolien marin au large des côtes bretonnes.</p>
+                <a href="projet-matriciel.html">Voir le projet</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-anchor-circle-exclamation"></i>
+                <h2>Résolution de problèmes</h2>
+                <p>Analyse prospective d'accès aux ressources pétrolières au regard de critères multiples (souvraineté, accès à la ressource, accessibilité théorique).</p>
+                <a href="projet-resolution-probleme.html">Voir le projet</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-tower-cell"></i>
+                <h2>Risques, vulnérabilités, territoires</h2>
+                <p>Étude de l'impact du numérique dans la communication lors d'évènements à risques comme "angle mort" de la gestion de crise.</p>
+                <a href="projet-risques.html">Voir le projet</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-scale-balanced"></i>
+                <h2>Documents de planfication</h2>
+                <p>La construction en zone côtière définie selon les contraintes environnementales et les risques naturels.</p>
+                <a href="projet-document-planification.html">Voir le projet</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-lightbulb"></i>
+                <h2>"Projet Lumière"</h2>
+                <p>Évaluation de la mise en lumière des prairies Saint-Martin à Rennes consécutivement à des projets d'aménagement.</p>
+                <a href="projet-lumiere.html">Voir le projet</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-microphone-lines"></i>
+                <h2>Enquête qualitative - par entretien</h2>
+                <p>Appréhender les perceptions du quartier Bas-Chantenay à Nantes face à la "gentrification".</p>
+                <a href="projet-enquete-entretien.html">Voir le projet</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-----Cartothèque Section----->
+
+<div id="cartotheque">
+    <div class="container">
+        <h1 class="sub-title">Cartothèque</h1> 
+        <div class="work-list">
+            <div class="work">
+                <img src="images/Cartes/Cartographie de ventilation Cerles proportionnels Thomas BARBIERI.png">
+                <div class="layer">
+                    <h3>Ventilation</h3>
+                    <p>Nombre de personnes par logement dans l'est Parisien.</p>
+                    <a href="assets/Cartes/Cartographie de ventilation Thomas BARBIERI.pdf" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/Cartes/Cartographie de ventilation Aplat Thomas BARBIERI.png">
+                <div class="layer">
+                    <h3>Ventilation</h3>
+                    <p>Nombre de personnes par logement et évolution du revenu médian dans l'est Parisien.</p>
+                    <a href="assets/Cartes/Cartographie de ventilation Thomas BARBIERI.pdf" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/Cartes/Cartographie de Flux Thoms BARBIERI.png">
+                <div class="layer">
+                    <h3>Cartographie de flux</h3>
+                    <p>Représentation des flux domicile-travail journaliers sur le littoral Atlantique.</p>
+                    <a href="assets/Cartes/Cartographie de Flux Thomas BARBIERi.pdf" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/Cartes/Cartographie Electorale Candidat en tete Thomas BARBIERI.png">
+                <div class="layer">
+                    <h3>Géographie électorale</h3>
+                    <p>Candidat en tête par commune au 1er tour en 2012 dans le Nord de la France.</p>
+                    <a href="assets/Cartes/Cartographie Electorale Thomas BARBIERI.pdf" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/Cartes/Cartographie Electorale Comparaison Thomas BARBIERI.png">
+                <div class="layer">
+                    <h3>Géographie électorale</h3>
+                    <p>Comparaison des votes et résultats par commune des deux candidats arrivés en tête.</p>
+                    <a href="assets/Cartes/Cartographie Electorale Thomas BARBIERI.pdf" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/Cartes/Cartographie Electorale FN et Tx Chomage Thomas BARBIERI.png">
+                <div class="layer">
+                    <h3>Géographie électorale</h3>
+                    <p>Votes pour le Front National et taux de chômage par commune dans le Nord de la France.</p>
+                    <a href="assets/Cartes/Cartographie Electorale Thomas BARBIERI.pdf" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/Cartes/Cartographie - Logements en Bretagne Thomas BARBIERI.png">
+                <div class="layer">
+                    <h3>Sémiologie graphique</h3>
+                    <p>Prix au m² et nombres de ventes en Bretagne.</p>
+                    <a href="assets/Cartes/Cartographie - Commentaire Logements en Bretagne Thomas BARBIERI.pdf" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/Cartes/Cartographie Scoring Thomas BARBIERI.png">
+                <div class="layer">
+                    <h3>Scoring</h3>
+                    <p>Analyse multi-critères pour l'achat d'un bien à Rennes.</p>
+                    <a href="assets/Cartes/Cartographie Scoring Thomas BARBIERI.pdf" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/Cartes/Cartographie Enquête par entretien Thomas BARBIERI - Louise GUERIN.png">
+                <div class="layer">
+                    <h3>Parcours commenté</h3>
+                    <p>Résumé cartographique de deux parcours commenté dans le quartier Bas-Chantenay (Nantes).</p>
+                    <a href="assets/Cartes/Planche Enquête par entretien Thomas BARBIERI - Louise GUERIN.pdf" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/Cartes/Cartographie Collisions Thomas BARBIERI.png">
+                <div class="layer">
+                    <h3>Cartographie de collisions</h3>
+                    <p>Analyse des collisions animaux / véhicules sur le réseau routier breton.</p>
+                    <a href="assets/Cartes/Cartographie Collisions Thomas BARBIERI.pdf" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/Cartes/Planche Resultats par IRIS par candidat Thomas BARBIERI.png">
+                <div class="layer">
+                    <h3>Géographie électorale</h3>
+                    <p>Résultats par IRIS au 1er tour de l'élection présidentielle dans l'AAV de Reims.</p>
+                    <a href="images/Cartes/Planche Resultats par IRIS par candidat Thomas BARBIERI.png" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/Cartes/Planche Typologie AAV de Reims Thomas BARBIERI.png">
+                <div class="layer">
+                    <h3>Géographie électorale</h3>
+                    <p>Planche cartographique des typologies de vote dans l'AAV de Reims en 2022.</p>
+                    <a href="assets/Cartes/Planche Typologie AAV de Reims Thomas BARBIERI.pdf" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/Cartes/Cartographie Election européenne 2024 Thomas BARBIERI.png">
+                <div class="layer">
+                    <h3>Géographie électorale</h3>
+                    <p>Liste arrivée en tête par commune aux élections européennes de 2024.</p>
+                    <a href="assets/Cartes/Cartographie Election européenne 2024 Thomas BARBIERI.pdf" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/Cartes/Poster Thomas BARBIERI.png">
+                <div class="layer">
+                    <h3>Poster</h3>
+                    <p>"On & Off Track" - La révolution du sport automobile</p>
+                    <a href="assets/Cartes/Poster Thomas BARBIERI.pdf" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-----Contact Section----->
+<div id="contact">
+    <div class="container">
+        <div class="contact-left">
+            <h1 class="subtitle">Contactez-moi !</h1>
+            <p><a href="https://linkedin.com/ThomasBarbieri" target="_blank"><i class="fa-brands fa-linkedin"></i>Thomas BARBIERI</a></p>
+            <p><a href="mailto:thomas.barbieri@free.fr"><i class="fa-solid fa-paper-plane"></i>thomas.barbieri@free.fr</a></p>
+            <p><i class="fa-solid fa-phone"></i>06 45 14 95 85</p>
+            <p><i class="fa-solid fa-location-dot"></i>Nantes, Rennes - France</p>
+        </div>
+        <a href="assets/Autres/CV Thomas BARBIERI.pdf" target="_blank" class="btn btn2">Mon CV</a>
+    </div>
+    <div class="copyright">
+        <p>Copyright &copy; - Tous droits réservés - Thomas Barbieri - <span id="year"></span></p>
+    </div>
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+</script>
+
+
+</body>
+</html>
