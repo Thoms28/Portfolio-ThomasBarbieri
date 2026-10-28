@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Thomas BARBIERI</title>
+
+<!-- Intégration de la police Poppins via Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/7e0552c28c.js" crossorigin="anonymous"></script>
 </head>
@@ -64,7 +70,13 @@
             <div class="tab-contents" id="experiences">
                 <ul>
                     <li>
-                        <span>2026 | Atelier professionnel - Gendarmerie Nationale</span>
+                        <span>2026 | Atelier professionnel - EIFER - Master 2</span>
+                        <ul class="sous-liste">
+                            <li>Atelier en cours de réalisation sur la thématique des mobilités.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span>2026 | Atelier professionnel - Gendarmerie Nationale - Master 1</span>
                         <ul class="sous-liste">
                             <li>Conception et automatisation d'atlas cartographiques départementaux sous QGIS pour l'aide à la décision stratégique des commandants de groupement.</li>
                             <li>Collecte, traitement et intégration de données géospatiales complexes.</li>
@@ -143,10 +155,22 @@
                 <a href="projet-chaine-traitement.html">Voir le projet</a>
             </div>
             <div>
+                <i class="fa-solid fa-cow"></i>
+                <h2>Cartogramme</h2>
+                <p>Analyse des dynamiques agricoles en France, au regard de l'élevage bovin.</p>
+                <a href="projet-cartogramme.html">Voir le projet</a>
+            </div>
+            <div>
                 <i class="fa-solid fa-satellite"></i>
                 <h2>Télédétection</h2>
                 <p>Étude des variations spatiales du système hydrologique du lac Tchad et de son environnement entre 1984 et 2025.</p>
                 <a href="projet-teledetection.html">Voir le projet</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-r-project"></i>
+                <h2>Atlas cartographique - R</h2>
+                <p>Cartographie par typologie de l'élection présidentielle de 2022.</p>
+                <a href="projet-atlasr.html">Voir le projet</a>
             </div>
             <div>
                 <i class="fa-brands fa-r-project"></i>
@@ -240,6 +264,30 @@
                     <a href="assets/Cartes/Cartographie de ventilation Thomas BARBIERI.pdf" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
             </div>
+             <div class="work">
+                <img src="images/Cartes/Cartographie GTFS Thomas BARBIERI.png">
+                <div class="layer">
+                    <h3>GTFS</h3>
+                    <p>Nombre de RER par axe sur une journée type.</p>
+                    <a href="assets/Cartes/Cartographie GTFS Thomas BARBIERI.pdf" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+             <div class="work">
+                <img src="images/Cartes/Cartographie Bivariee Thomas BARBIERI.png">
+                <div class="layer">
+                    <h3>Bivariée</h3>
+                    <p>Analyse de la péréquation par habitant par commune comparée à l'effort fiscal communal.</p>
+                    <a href="assets/Cartes/Cartographie Bivariee Thomas BARBIERI.pdf" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/Cartes/Infographie-Le-Mans-Thomas-BARBIERI.png">
+                <div class="layer">
+                    <h3>Infographie</h3>
+                    <p>"The Story of 2026 Endurance Greatest Race" - Infographie retraçant les 24h du Mans 2026.</p>
+                    <a href="assets/Cartes/Infographie Thomas BARBIERI.pdf" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
             <div class="work">
                 <img src="images/Cartes/Cartographie de Flux Thoms BARBIERI.png">
                 <div class="layer">
@@ -281,6 +329,14 @@
                 </div>
             </div>
             <div class="work">
+                <img src="images/Cartes/Cartographie Cartogramme BARBIERI MENISSEZ.png">
+                <div class="layer">
+                    <h3>Cartogramme</h3>
+                    <p>Analyse des dynamiques agricoles en France, au regard de l'élevage bovin.</p>
+                    <a href="assets/Cartes/Cartographie Cartogramme BARBIERI MENISSEZ.pdf" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
                 <img src="images/Cartes/Cartographie Scoring Thomas BARBIERI.png">
                 <div class="layer">
                     <h3>Scoring</h3>
@@ -294,6 +350,14 @@
                     <h3>Parcours commenté</h3>
                     <p>Résumé cartographique de deux parcours commenté dans le quartier Bas-Chantenay (Nantes).</p>
                     <a href="assets/Cartes/Planche Enquête par entretien Thomas BARBIERI - Louise GUERIN.pdf" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/Cartes/Cartographie Atlas R BARBIERI MENISSEZ ROQUART.png">
+                <div class="layer">
+                    <h3>Atlas hors SIG (R)</h3>
+                    <p>Typologie par commune des votes lors de l'élection présidentielle de 2022.</p>
+                    <a href="assets/Projets/Master 2/Rendu Atlas R BARBIERI - MENISSEZ - ROQUART.pdf" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
             </div>
             <div class="work">
@@ -345,7 +409,7 @@
     <div class="container">
         <div class="contact-left">
             <h1 class="subtitle">Contactez-moi !</h1>
-            <p><a href="https://linkedin.com/ThomasBarbieri" target="_blank"><i class="fa-brands fa-linkedin"></i>Thomas BARBIERI</a></p>
+            <p><a href="https://www.linkedin.com/in/thomas-barbieri-a1b7a4447/" target="_blank"><i class="fa-brands fa-linkedin"></i>Thomas BARBIERI</a></p>
             <p><a href="mailto:thomas.barbieri@free.fr"><i class="fa-solid fa-paper-plane"></i>thomas.barbieri@free.fr</a></p>
             <p><i class="fa-solid fa-phone"></i>06 45 14 95 85</p>
             <p><i class="fa-solid fa-location-dot"></i>Nantes, Rennes - France</p>

@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projet - Géostatistiques | Thomas BARBIERI</title>
+
+<!-- Intégration de la police Poppins via Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="projet-style.css">
     <script src="https://kit.fontawesome.com/7e0552c28c.js" crossorigin="anonymous"></script>
 </head>
@@ -52,8 +58,8 @@
             </div>
         </div>
         <p class="team-list">Étudiants concernés : 
-            <a href="" target="_blank">Thomas Barbieri</a> et
-            <a href="" target="_blank">Antoine Menissez.</a>
+            <a href="https://www.linkedin.com/in/thomas-barbieri-a1b7a4447/" target="_blank">Thomas Barbieri</a> et
+            <a href="https://www.linkedin.com/in/antoine-menissez-766085360/" target="_blank">Antoine Menissez.</a>
         </p>
     </div>
 </div>
@@ -64,11 +70,7 @@
         <h2 class="sub-title">Présentation & Contexte</h2>
         <div class="context-split">
             <div class="context-text">
-                <p>Cette monographie s'attarde à étudier et analyser la géographie électorale de l'aire d'attraction (AAV) de la ville de Reims comme définie par l'INSEE. Ce travail est réalisé dans le cadre du cours "Travaux dirigés" de la troisième année de Licence Géographie
-                    et aménagement de Nantes Université.</p>
-                <p>La géographie électorale est une branche de la géographie politique qui analyse les comportements électoraux à travers leur inscription dans l’espace, non seulement par une représentation graphique mais cherche à comprendre les logiques territoriales, historiques 
-                    et sociales qui façonnent les résultats. Sous la direction et l'aide de <strong><a href="https://www.univ-nantes.fr/jean-riviere">Jean RIVIÈRE</a></strong>, enseignant-chercheur, maître de conférences, spécialiste de géographie électorale, j'ai pu mener ce travail à bien sur une ville moyenne française, afin de se distinguer des recherches
-                sur les grandes métropoles du territoire métropolitain.</p>
+                <p>Ce projet a été mené dans le cadre du cours "Géostatistiques niveau 1" et il vise à objectiver et à spatialiser les inégalités d'implantation entre les ménages dits "pauvres" et "riches" à Bogota (Colombie). Ces travaux s'inscrivent dans le cadre d'une approche sur la ségrégation socio-résidentielle.</p>
             </div>
         </div>
         </div>
@@ -82,29 +84,29 @@
             <div class="objectif-card">
                 <i class="fa-regular fa-map"></i>
                 <div>
-                    <h3>Répartition des votes</h3>
-                    <p>Comprendre la répartition des votes à l'échelle des IRIS.</p>
+                    <h3>Mesure de l'autocorrélation spatiale</h3>
+                    <p>Usages des variogrammes pour évaluer la qualité de l'auto-corrélation spatiale et définir la portée (distance) des phénomènes de concentration.</p>
                 </div>
             </div>
             <div class="objectif-card">
                 <i class="fa-solid fa-chart-line"></i>
                 <div>
-                    <h3>Corrélations socio-électorales</h3>
-                    <p>Mettre en lien les caractéristiques socio-professionnelles avec les caractéristiques électorales.</p>
+                    <h3>Pôles de concentration</h3>
+                    <p>Identifier la taille moyenne des pôles d'implantation fonction des revenus à partir des indices ICS01 (pauvres) et ICS06 (riches).</p>
                 </div>
             </div>
             <div class="objectif-card">
                 <i class="fa-solid fa-people-group"></i>
                 <div>
-                    <h3>Variables explicatives</h3>
-                    <p>Comprendre les variables explicatives du vote dans l'AAV de Reims.</p>
+                    <h3>Modéliser la répartition spatiale</h3>
+                    <p>Création de cartes de surfaces lissées des effectifs pondérés pour représenter les densités de population de façon continue.</p>
                 </div>
             </div>
             <div class="objectif-card">
                 <i class="fa-solid fa-layer-group"></i>
                 <div>
-                    <h3>Comparaison territoriale</h3>
-                    <p>Comparer les dynamiques et mécanismes du vote dans l'AAV de Reims à d'autres espaces en France.</p>
+                    <h3>Caractériser la ségrégation socio-résidentielle à Bogota</h3>
+                    <p>Analyse des cartographies réalisées afin de mettre en évidence les fractures territoriales associées.</p>
                 </div>
             </div>
         </div>
@@ -117,21 +119,20 @@
         <h2 class="sub-title">Méthodologie / Compétences</h2>
         <div class="methodo-content">
             <div class="methodo-text">
-                <p>Méthodologiquement, la réalisation de cette monographie est divisée en de multiples étapes : </p>
+                <p>Les étapes suivies pour réaliser cette analyse géostatistique sont les suivantes :</p>
                     <ul class="sous-liste">
-                            <li>Passage en revue de la littérature scientfique disponible sur le sujet et des données à disposition</li>
-                            <li>Phase d'exploration des données disponibles, par cartographie des variables sur l'espace d'analyse et comparer les grandes tendances visibles à des échelles plus large</li>
-                            <li>Cartographie des variables de façon brutes (cartographie du candidat en tête, % par IRIS pour chaque candidat)</li>
-                            <li>Réalisaiton de statistiques spatiales avancées pour comprendre et analyse l'espace de recherche (typologie par CAH, matrice de corrélation, analyse des plans princpaux de l'ACP)</li>
-                            <li>Comparer les résultats obtenus à d'autres espaces en France Métropolitaine sur la même élection.</li>
+                            <li>Calcul de la distance au plus proche voisin (PPV) entre les différents secteurs</li>
+                            <li>Usage de la fonction K de Ripley et génération de variogrammes, pour ainsi en déduire les valeurs de lissage (sigma)</li>
+                            <li>Définition de l'emprise urbaine analysée pour associer les valeurs attributaires (effectifs des ménages) aux coordonnées géographiques</li>
+                            <li>Génération de surfaces lissées superposées à des cercles proportionnels pour les ICS01 et 06. Habillage de la cartographe à partir de fonction faites sur-mesure</li>
                     </ul>
             </div>
             <div class="skills-tags">
-                <span class="tag">QGIS</span>
                 <span class="tag">RStudio</span>
-                <span class="tag">Excel</span>
-                <span class="tag">Adobe Illustrator</span>
-                <span class="tag">Lecture d'articles scientifiques</span>
+                <span class="tag">Package "sf" & "spatstat"</span>
+                <span class="tag">Géostatistiques</span>
+                <span class="tag">Autocorrélation spatiale</span>
+                <span class="tag">Lissage spatial</span>
             </div>
         </div>
     </div>
@@ -142,10 +143,8 @@
     <div class="container">
         <h2 class="sub-title">Données / Bibliographie</h2>
         <ul class="data-list">
-            <li><i class="fa-solid fa-database"></i> <strong>INSEE :</strong>Base de données Filosofi (2019) et contours IRIS.</li>
-            <li><i class="fa-solid fa-database"></i> <strong>INSEE :</strong>Population en 2022 Recensement de la population - Base infracommunale (Iris)</li>
-            <li><i class="fa-solid fa-book"></i> <strong>INSEE :</strong><a href="https://www.insee.fr/fr/information/4803954">Base des aires d'attraction des villes 2020</a></li>
-            <li><i class="fa-solid fa-book"></i> <strong>Ministère de l'intérieur:</strong><a href="https://www.data.gouv.fr/datasets/election-presidentielle-des-10-et-24-avril-2022-resultats-definitifs-du-1er-tour">Résultats du premier tour de l'élection présidentielle 2022.</a></li>
+            <li><i class="fa-solid fa-database"></i> <strong>DANE : </strong>Découpages de Bogota en secteurs de recensement (1993 - 2005).</li>
+            <li><i class="fa-solid fa-database"></i> <strong>ANR METAL (UMR Migrinter) :</strong>Nombre de ménages suivant un indicateur de condition sociale (ICS) pour 1993 et 2005.</li>
         </ul>
     </div>
 </div>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet - Cartogramme | Thomas BARBIERI</title>
+
+<!-- Intégration de la police Poppins via Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="projet-style.css">
+    <script src="https://kit.fontawesome.com/7e0552c28c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header-projet">
+    <div class="container">
+        <nav>
+            <h1>Thomas BARBIERI</h1>
+            <ul>
+               <li><a href="index.html#about">À propos</a></li> 
+               <li><a href="index.html#projects">Projets</a></li> 
+               <li><a href="index.html#cartotheque">Cartothèque</a></li>
+               <li><a href="index.html#contact">Contact</a></li> 
+            </ul>
+        </nav>
+        <a href="index.html#projects" class="btn" style="margin-left: 0;">
+            <i class="fa-solid fa-arrow-left" style="margin-right: 8px;"></i>Retour au portfolio</a>
+    </div> 
+</div>
+
+<!-- Résumé PROJET -->
+<div id="projet-resume">
+    <div class="container">
+        <h1 class="title">Cartogramme - Structure d'élevage</h1>
+        <div class="resume-list">
+            <div>
+                <i class="fa-regular fa-calendar"></i>
+                <h2>Période</h2>
+                <p>Septembre 2026</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-graduation-cap"></i>
+                <h2>Formation</h2>
+                <p>Master 2 - SIGAT</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-square-poll-horizontal"></i>
+                <h2>Type de rendu</h2>
+                <p>Dossier d’analyse</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-user"></i>
+                <h2>En binôme</h2>
+                <p>Thomas Barbieri et Antoine Menissez</p>
+            </div>
+        </div>
+        <p class="team-list">Étudiants concernés : 
+            <a href="https://www.linkedin.com/in/thomas-barbieri-a1b7a4447/" target="_blank">Thomas Barbieri</a> et
+            <a href="https://www.linkedin.com/in/antoine-menissez-766085360/" target="_blank">Antoine Menissez.</a>
+        </p>
+    </div>
+</div>
+
+<!-- Présentation & Contexte PROJET -->
+<div id="projet-context">
+    <div class="container">
+        <h2 class="sub-title">Présentation & Contexte</h2>
+        <div class="context-split">
+            <div class="context-text">
+                <p>Dans le cadre du cours "Traitements géomatiques avancés" en Master 2 SIGAT, il nous a été demandé de réaliser un cartogramme (ou cartographie en anamorphose), afin de représenter deux variables quantitatives (de stock et de ratio). Ici, nous avons souhaité représenter la structure de l'élevage bovin en France, en comparant le nombre d'UGB (Unités Gros Bétails) et la
+                    part de vaches destinées à la production de lait dans le cheptel bovin. L'objectif sous-jacent du second indicateur est de mettre en évidence les départements où les bovins sont principalement destinés à la production de viande. L'échelle d'analayse choisie sont les départements de France Métropolitaine.</p>
+            </div>
+        </div>
+        </div>
+    </div>
+
+<!-- Objectifs PROJET -->
+<div id="projet-objectif">
+    <div class="container">
+        <h2 class="sub-title">Objectifs du projet</h2>
+        <div class="objectifs-grid">
+            <div class="objectif-card">
+                <i class="fa-regular fa-map"></i>
+                <div>
+                    <h3>Observer les disparités spatiales</h3>
+                    <p>Appréhender les différences majeures entre les départements ou entre des départements contigus.</p>
+                </div>
+            </div>
+            <div class="objectif-card">
+                <i class="fa-solid fa-chart-line"></i>
+                <div>
+                    <h3>Analyse des spécialisations agricoles</h3>
+                    <p>Mettre en avant les logiques différenciées du peuplement bovin et des usages de l'élevage (opposition entre vaches laitières et vaches nourrices).</p>
+                </div>
+            </div>
+            <div class="objectif-card">
+                <i class="fa-solid fa-people-group"></i>
+                <div>
+                    <h3>Mesurer les dynamiques historiques</h3>
+                    <p>Visualiser si les structures d'élevage connues (comme la concentration dans l'ouest de la France ou le Massif Central) demeurent à l'oeuvre.</p>
+                </div>
+            </div>
+            <div class="objectif-card">
+                <i class="fa-solid fa-layer-group"></i>
+                <div>
+                    <h3>Approche cartographique à contre-courant</h3>
+                    <p>Une représentation non conventionnelle, en opposition aux normes de cartographique classique.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Méthdologie / Compétences PROJET -->
+<div id="projet-methodo">
+    <div class="container">
+        <h2 class="sub-title">Méthodologie / Compétences</h2>
+        <div class="methodo-content">
+            <div class="methodo-text">
+                <p>La mise en oeuvre de ce projet cartographique est divisée en plusieurs étapes </p>
+                    <ul class="sous-liste">
+                            <li>Recherche de la donnée en open-data sur l'agriculture et l'élevage</li>
+                            <li>Phase d'exploration des données disponibles, à partir d'une cartographie usuelle, normée</li>
+                            <li>Agrégation des données utilisées à l'échelle du département</li>
+                            <li>Déformation de l'espace d'analyse sur ScapeToad et comparaison du résultat obtenu aux métriques de vérification </li>
+                            <li>Ajout de la variable de ratio et l'aplat associé sur QGIS après analyse de la distribution de la série statistique</li>
+                            <li>Cartographie, analyse, interprétation et critique des résultats obtenus</li>
+                    </ul>
+            </div>
+            <div class="skills-tags">
+                <span class="tag">ScapeToad</span>
+                <span class="tag">QGIS</span>
+                <span class="tag">Adobe Illustrator</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Données / Bibliographie PROJET -->
+<div id="projet-data">
+    <div class="container">
+        <h2 class="sub-title">Données / Bibliographie</h2>
+        <ul class="data-list">
+            <li><i class="fa-solid fa-database"></i> <strong>Agreste :</strong><a href="https://stats.agriculture.gouv.fr/cartostat/#view=map11&c=indicator">Nombre d'unités gros bétail en 2020 (UGB) par commune.</a></li> 
+            <li><i class="fa-solid fa-database"></i> <strong>Agreste :</strong><a href="https://stats.agriculture.gouv.fr/cartostat/#view=map12&c=indicator">Nombre de vaches laitières en 2020 par commune.</a></li>
+            <li><i class="fa-solid fa-database"></i> <strong>Agreste :</strong><a href="https://stats.agriculture.gouv.fr/cartostat/#view=map13&c=indicator">Nombre de vaches nourrices en 2020 par commune.</a></li>
+            <li><i class="fa-solid fa-database"></i> <strong>IGN :</strong><a href="https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_ADMIN-EXPRESS">Communes françaises 2026 - ADMIN-EXPRESS.</a></li>
+        </ul>
+    </div>
+</div>
+
+<!-- Rendu Final PROJET -->
+<div id="projet-rendu">
+         <div class="container">
+            <h2 class="sub-title">Rendu Final</h2>
+            <iframe src="assets/Projets/Master 2/Rendu Cartogramme BARBIERI - MENISSEZ.pdf" width="100%" height="1080px" style="border: none; border-radius: 10px; margin-top: 20px;"></iframe>
+        </div>    
+        </div>
+    </div>
+</div>
+
+
+
+
+       
+
+
+<!-- CONTACT & FOOTER (Identique à l'original) -->
+<div id="contact">
+    <div class="copyright">
+        <p>Copyright &copy; - Tous droits réservés - Thomas Barbieri - <span id="year"></span></p>
+    </div>
+</div>
+
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>

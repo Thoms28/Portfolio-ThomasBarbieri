@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet - Atlas R | Thomas BARBIERI</title>
+
+<!-- Intégration de la police Poppins via Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="projet-style.css">
+    <script src="https://kit.fontawesome.com/7e0552c28c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header-projet">
+    <div class="container">
+        <nav>
+            <h1>Thomas BARBIERI</h1>
+            <ul>
+               <li><a href="index.html#about">À propos</a></li> 
+               <li><a href="index.html#projects">Projets</a></li> 
+               <li><a href="index.html#cartotheque">Cartothèque</a></li>
+               <li><a href="index.html#contact">Contact</a></li> 
+            </ul>
+        </nav>
+        <a href="index.html#projects" class="btn" style="margin-left: 0;">
+            <i class="fa-solid fa-arrow-left" style="margin-right: 8px;"></i>Retour au portfolio</a>
+    </div> 
+</div>
+
+<!-- Résumé PROJET -->
+<div id="projet-resume">
+    <div class="container">
+        <h1 class="title">Atlas R - Élection présidentielle 2022</h1>
+        <div class="resume-list">
+            <div>
+                <i class="fa-regular fa-calendar"></i>
+                <h2>Période</h2>
+                <p>Septembre - Octobre 2026</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-graduation-cap"></i>
+                <h2>Formation</h2>
+                <p>Master 2 - SIGAT</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-square-poll-horizontal"></i>
+                <h2>Type de rendu</h2>
+                <p>Atlas cartographique</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-user"></i>
+                <h2>En groupe</h2>
+                <p>Groupe de 3 étudiants</p>
+            </div>
+        </div>
+        <p class="team-list">Étudiants concernés :  
+            <a href="https://www.linkedin.com/in/thomas-barbieri-a1b7a4447/" target="_blank">Thomas Barbieri</a>, 
+            <a href="https://www.linkedin.com/in/antoine-menissez-766085360/" target="_blank">Antoine Menissez</a> et
+            <a href="https://fr.linkedin.com/in/kim-roquart-2b9851234" target="_blank">Kim Roquart</a> 
+        </p>
+    </div>
+</div>
+
+<!-- Présentation & Contexte PROJET -->
+<div id="projet-context">
+    <div class="container">
+        <h2 class="sub-title">Présentation & Contexte</h2>
+        <div class="context-split">
+            <div class="context-text">
+                <p>L'atlas cartographique réalisé dans l'environnement R a pour objectif de visualiser et analyser les votes dans chaque commune de France métropolitaine lors de l'élection présidentielle de 2022.  Le projet s'inscrit dans le cadre du cours "Le traitement des donnnées spatiales hors SIG". Cette cartographie repose une classification
+                    ascendante hiérarchique (CAH) de chaque commune selon leurs résultats électoraux, permettant de mettre en évidence les dynamiques territoriales et les logiques spatiales du vote.
+                </p>
+            </div>
+        </div>
+        </div>
+    </div>
+
+<!-- Objectifs PROJET -->
+<div id="projet-objectif">
+    <div class="container">
+        <h2 class="sub-title">Objectifs du projet</h2>
+        <div class="objectifs-grid">
+            <div class="objectif-card">
+                <i class="fa-regular fa-map"></i>
+                <div>
+                    <h3>Analyse exploratoire des votes</h3>
+                    <p>Résumer et comprendre les dynamiques et oppositions électorales à travers 14 variables.</p>
+                </div>
+            </div>
+            <div class="objectif-card">
+                <i class="fa-solid fa-chart-line"></i>
+                <div>
+                    <h3>Typologie territoriale</h3>
+                    <p>Regrouper des communes au profil de vote similaires en créant des classes homogènes.</p>
+                </div>
+            </div>
+            <div class="objectif-card">
+                <i class="fa-solid fa-people-group"></i>
+                <div>
+                    <h3>Cartographie multi-échelles</h3>
+                    <p>Représentation cartographique des typologies de façon multiscalaire (commune, département, région, pays).</p>
+                </div>
+            </div>
+            <div class="objectif-card">
+                <i class="fa-solid fa-layer-group"></i>
+                <div>
+                    <h3>Évaluation critique</h3>
+                    <p>Comprendre et appréhender les limites de la méthode statistique, notamment face au biais du poids démographique des communes et le choix du nombre de classes.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Méthdologie / Compétences PROJET -->
+<div id="projet-methodo">
+    <div class="container">
+        <h2 class="sub-title">Méthodologie / Compétences</h2>
+        <div class="methodo-content">
+            <div class="methodo-text">
+                <p>La mise en oeuvre de cet atlas cartographique hors SIGest divisée en plusieurs étapes : </p>
+                    <ul class="sous-liste">
+                            <li>Réalisation d'une Analyse en Composantes Principales (ACP) - analyse multivariée - pour en extraire les grandes tendances</li>
+                            <li>Mise en oeuvre d'une Classification Ascendante Hiérarchique (CAH) avec la méthode de Ward / distance euclidienne sur des données centrées-réduites pour définir 15 typologies</li>
+                            <li>Utilisation des "valeurs-tests" pour définir les spécificités de chaque classe</li>
+                            <li>Usage du package "mapsf", pour générer les cartographies des typologies commune par commune dans les départements français</li>
+                    </ul>
+            </div>
+            <div class="skills-tags">
+                <span class="tag">RStudio</span>
+                <span class="tag">Analyse de données (ACP, CAH, valeurs-tests)</span>
+                <span class="tag">Cartographie (mapsf)</span>
+                <span class="tag">Géographie électorale</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Données / Bibliographie PROJET -->
+<div id="projet-data">
+    <div class="container">
+        <h2 class="sub-title">Données / Bibliographie</h2>
+        <ul class="data-list">
+            <li><i class="fa-solid fa-database"></i> <strong>Ministère de l'intérieur:</strong><a href="https://www.data.gouv.fr/datasets/election-presidentielle-des-10-et-24-avril-2022-resultats-definitifs-du-1er-tour">Résultats du premier tour de l'élection présidentielle 2022.</a></li>
+            <li><i class="fa-solid fa-database"></i> <strong>IGN :</strong><a href="https://cartes.gouv.fr/rechercher-une-donnee/dataset/IGNF_ADMIN-EXPRESS">Contours administratifs de la France, 2022.</a></li>
+        </ul>
+    </div>
+</div>
+
+<!-- Rendu Final PROJET -->
+<div id="projet-rendu">
+         <div class="container">
+            <h2 class="sub-title">Rendu Final</h2>
+            <iframe src="assets/Projets/Master 2/Rendu Atlas R BARBIERI - MENISSEZ - ROQUART.pdf" width="100%" height="1080px" style="border: none; border-radius: 10px; margin-top: 20px;"></iframe>
+        </div>    
+        </div>
+    </div>
+</div>
+
+
+
+
+       
+
+
+<!-- CONTACT & FOOTER (Identique à l'original) -->
+<div id="contact">
+    <div class="copyright">
+        <p>Copyright &copy; - Tous droits réservés - Thomas Barbieri - <span id="year"></span></p>
+    </div>
+</div>
+
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
